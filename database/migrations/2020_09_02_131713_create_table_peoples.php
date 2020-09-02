@@ -17,7 +17,7 @@ class CreateTablePeoples extends Migration
             $table->id();
             $table->string('name');
             $table->string('position', 150);
-            $table->string('images', 100);
+            $table->string('images', 100)->nullable();
             $table->text('text');
             $table->timestamps();
         });
