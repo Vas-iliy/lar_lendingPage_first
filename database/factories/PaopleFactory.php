@@ -11,6 +11,7 @@ $factory->define(People::class, function (Faker $faker) {
         'name' => $faker->name,
         'position' => $faker->jobTitle,
         'text' => $faker->realText(rand(100, 150)),
+        'images' => $faker->imageUrl(246, 246, 'people', true, 'Faker', true),
         'created_at' => $created,
         'updated_at' => $created,
     ];

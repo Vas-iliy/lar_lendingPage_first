@@ -17,6 +17,7 @@ $factory->define(Page::class, function (Faker $faker) {
         'alias' => $name,
         'title' => $title,
         'text' => $text,
+        'images' => $faker->imageUrl(584, 400, 'phones', true, 'Faker', true),
         'created_at' => $created,
         'updated_at' => $created
     ];

@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="be91d4cf-21f3-4859-b5d6-da262dc018e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PaopleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PaopleFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_131625_create_table_portfolios.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_131625_create_table_portfolios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_131713_create_table_peoples.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_131713_create_table_peoples.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +46,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="lar_lendingpage_first: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lar_lendingpage_first: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="services: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -206,7 +217,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598457681206</updated>
-      <workItem from="1598457684090" duration="5946000" />
+      <workItem from="1598457684090" duration="7707000" />
     </task>
     <servers />
   </component>
