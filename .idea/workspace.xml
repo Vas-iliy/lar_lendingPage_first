@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be91d4cf-21f3-4859-b5d6-da262dc018e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/about-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/client_logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/client_logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/client_logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/client_logo4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/client_logo5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/main_device_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio_pic8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team_pic1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team_pic2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team_pic3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/twitter_bird.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/People.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/People.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PageFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PortfolioFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PortfolioFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_135604_change_pages_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +50,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="lar_lendingpage_first: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="portfolios: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="services: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -210,6 +187,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -238,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598457681206</updated>
-      <workItem from="1598457684090" duration="10099000" />
+      <workItem from="1598457684090" duration="13333000" />
     </task>
     <servers />
   </component>
