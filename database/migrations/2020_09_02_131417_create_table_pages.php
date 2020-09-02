@@ -13,8 +13,12 @@ class CreateTablePages extends Migration
      */
     public function up()
     {
-        Schema::create('table_pages', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 100);
+            $table->string('alias', 100);
+            $table->text('text');
+            $table->string('images', 100);
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateTablePages extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_pages');
+        Schema::dropIfExists('pages');
     }
 }
