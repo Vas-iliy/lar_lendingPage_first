@@ -6,6 +6,7 @@ use App\Page;
 use App\People;
 use App\Portfolio;
 use App\Servic;
+use DB;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -16,7 +17,8 @@ class IndexController extends Controller
         $services = Servic::where('id', '<', 20)->get();
         $peoples = People::take(3)->get();
 
-        $menu = [];
+        $tags = DB::table('portfolios')->distinct()->pluck('filter');
+
         foreach ($pages as $page) {
             $menu[] = ['title' => $page->name, 'alias' => $page->alias];
         }
@@ -31,7 +33,8 @@ class IndexController extends Controller
             'pages' => $pages,
             'services' => $services,
             'portfolios' => $portfolios,
-            'peoples' => $peoples
+            'peoples' => $peoples,
+            'tags' => $tags
         ]);
     }
 }
