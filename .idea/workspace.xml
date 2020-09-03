@@ -191,12 +191,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
       <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,7 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598457681206</updated>
       <workItem from="1598457684090" duration="17235000" />
-      <workItem from="1599142086005" duration="9591000" />
+      <workItem from="1599142086005" duration="12055000" />
     </task>
     <servers />
   </component>

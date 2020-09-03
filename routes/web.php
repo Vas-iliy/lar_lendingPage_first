@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::match(['get', 'post'], '/', 'IndexController@execute')->name('home');
+    Route::get( '/', 'IndexController@execute')->name('home');
+    Route::post('/', 'IndexController@input');
     Route::get('/page/{alias}', 'PageController@execute')->name('page');
 
     Route::auth();
