@@ -9,6 +9,8 @@ use App\Servic;
 use DB;
 use Illuminate\Http\Request;
 
+use Faker\Generator as Faker;
+
 class IndexController extends Controller
 {
     public function execute(Request $request) {

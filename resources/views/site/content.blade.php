@@ -119,59 +119,28 @@
     </section>
 @endif
 
-<section class="page_section team" id="team"><!--main-section team-start-->
-    <div class="container">
-        <h2>Team</h2>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
-        <div class="team_section clearfix">
-            <div class="team_area">
-                <div class="team_box wow fadeInDown delay-03s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="{{asset('assets/img/team_pic1.jpg')}}" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Tom Rensed</h3>
-                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team_area">
-                <div class="team_box  wow fadeInDown delay-06s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="{{asset('assets/img/team_pic2.jpg')}}" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Kathren Mory</h3>
-                <span class="wow fadeInDown delay-06s">Vice President</span>
-                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team_area">
-                <div class="team_box wow fadeInDown delay-09s">
-                    <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
-                    <img src="{{asset('assets/img/team_pic3.jpg')}}" alt="">
-                    <ul>
-                        <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-                        <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Lancer Jack</h3>
-                <span class="wow fadeInDown delay-09s">Senior Manager</span>
-                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+@if(isset($peoples) && is_object($peoples))
+    <section class="page_section team" id="team"><!--main-section team-start-->
+        <div class="container">
+            <h2>Team</h2>
+            <h6>Which shall sing?' 'Oh, YOU sing,' said the Caterpillar. 'Well, perhaps.</h6>
+            <div class="team_section clearfix">
+                @foreach($peoples as $k => $people)
+                    <div class="team_area">
+                        <div class="team_box wow fadeInDown delay-0{{($k + 1)*3}}s">
+                            <div class="team_box_shadow"><a href="javascript:void(0)"></a></div>
+                            <img src="{{asset('assets/img') . '/' . $people->images}}" alt="">
+                        </div>
+                        <h3 class="wow fadeInDown delay-0{{($k + 1)*3}}s">{{$people->name}}</h3>
+                        <span class="wow fadeInDown delay-0{{($k + 1)*3}}s">{{$people->position}}</span>
+                        <p class="wow fadeInDown delay-0{{($k + 1)*3}}s">{{$people->text}}</p>
+                    </div>
+                @endforeach
             </div>
         </div>
-    </div>
-</section>
+    </section>
+@endif
+
 <!--/Team-->
 <!--Footer-->
 <footer class="footer_wrapper" id="contact">
@@ -181,13 +150,10 @@
                 <h2>Contact Us</h2>
                 <div class="row">
                     <div class="col-lg-4">
-
                     </div>
                     <div class="col-lg-4">
-
                     </div>
                     <div class="col-lg-4">
-
                     </div>
                 </div>
             </div>
@@ -207,9 +173,6 @@
                             <p>support@sitename.com</p>
                         </div>
                     </div>
-
-
-
                     <ul class="social_links">
                         <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                         <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
