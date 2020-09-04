@@ -19,7 +19,11 @@ Route::get('/page/{alias}', 'PageController@execute')->name('page');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', function () {
+        if (view()->exists('admin.index')) {
+            $title = 'Панель администратора';
 
+            return view('admin.index', compact('title'));
+        }
     });
 
     Route::group(['prefix'=> 'pages'], function () {
