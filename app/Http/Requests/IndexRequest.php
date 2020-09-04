@@ -31,8 +31,8 @@ class IndexRequest extends FormRequest
     }
     public function messages() {
         return [
+            'email' => 'Поле :attribute должно соответствовать Email адресу',
             'required' => 'Поле :attribute обязательно к заполнению',
-            'email' => 'Поле :attribute должно соответствовать Email адресу'
         ];
     }
 }

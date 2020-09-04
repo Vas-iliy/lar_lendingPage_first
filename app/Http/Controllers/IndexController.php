@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\IndexRequest;
+use App\Mail\OrderShipped;
 use App\Page;
 use App\People;
 use App\Portfolio;
@@ -32,17 +33,14 @@ class IndexController extends Controller
         return view('site.index', compact(['menu', 'pages', 'services', 'portfolios', 'peoples', 'tags']));
     }
 
-    public function input (IndexRequest $request) {
+    public function input (IndexRequest $request ) {
         if ($request->isMethod('post')) {
             $data = $request->all();
-            Mail::send('site.email', ['data' => $data], function ($message) use ($data) {
-                $mail_admin = env('MAIL_ADMIN');
-                $mail_admin = 'vkolyasev1999@mail.ru';
+            $email = 'Vkolyasev1999@mail.ru';
+            Mail::to($email)->send(new OrderShipped($data));
 
-                $message->from($data['email'], $data['name']);
-                $message->to($mail_admin)->subject('Question');
-            });
             return redirect()->route('home')->with('status', 'Email is send');
+
         }
     }
 }

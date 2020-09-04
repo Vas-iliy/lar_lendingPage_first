@@ -184,9 +184,9 @@
                     <div class="form">
                         <form action="{{route('home')}}" method="post">
                             @csrf
-                            <input class="input-text" type="text" name="name" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                            <input class="input-text" type="text" name="email" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-                            <textarea name="text" class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                            <input class="input-text" type="text" name="name" placeholder="Your Name *" required>
+                            <input class="input-text" type="text" name="email" placeholder="Your E-mail *" required>
+                            <textarea name="text" class="input-text text-area" cols="0" rows="0" placeholder="Your Message *"></textarea>
                             <input class="input-btn" type="submit" value="send message">
 
                             {{csrf_field()}}
