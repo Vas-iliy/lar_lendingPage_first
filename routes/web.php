@@ -13,13 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group([], function () {
-    Route::get( '/', 'IndexController@execute')->name('home');
-    Route::post('/', 'IndexController@input');
-    Route::get('/page/{alias}', 'PageController@execute')->name('page');
-
-    Route::auth();
-});
+Route::get( '/', 'IndexController@execute')->name('home');
+Route::post('/', 'IndexController@input');
+Route::get('/page/{alias}', 'PageController@execute')->name('page');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/', function () {
@@ -44,3 +40,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::match(['get', 'post', 'delete'], '/edit/{service}', 'ServiceEditController@execute')->name('serviceEdit');
     });
 });
+
+Auth::routes();
+

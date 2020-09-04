@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="header_box">
-        <div class="logo"><a href="#"><img src="{{asset('assets/img/logo.png')}}" alt="logo"></a></div>
+        <div class="logo"><a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="logo"></a></div>
 
         @if(isset($menu))
             <nav class="navbar navbar-inverse" role="navigation">
