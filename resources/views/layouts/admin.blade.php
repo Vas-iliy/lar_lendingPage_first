@@ -12,6 +12,7 @@
 
     <script type="text/javascript" src="{{asset('assets/js/jquery-1.11.0.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/bootstrap-filestyle.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets/js/ckeditor/ckeditor.js')}}"></script>
 </head>
 <body>
