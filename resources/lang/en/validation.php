@@ -146,6 +146,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'Имя',
+        'alias' => 'Псевдоним',
+        'text' => 'Текст'
+    ],
 
 ];

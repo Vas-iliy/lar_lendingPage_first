@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PageAddRequest;
+use App\Page;
 use Illuminate\Http\Request;
 
 class PagesAddController extends Controller
@@ -18,8 +19,22 @@ class PagesAddController extends Controller
     }
     public function input (PageAddRequest $request) {
         if ($request->isMethod('post')) {
-            $input = $request->except('_token');
-            dump($input);
+            $input =$request->except('_token');
+            $input['title'] = 'none';
+
+            if ($request->hasFile('images')) {
+                $file = $request->file('images');
+                $input['images'] = $file->getClientOriginalName();
+                $file->move(public_path(). '/assets/img', $input['images']);
+            }
+
+            $page = new Page();
+            $page->fill($input);
+
+            if ($page->save()) {
+                return redirect('admin')->with('status', 'Страница добавлена');
+            }
+
         }
     }
 }

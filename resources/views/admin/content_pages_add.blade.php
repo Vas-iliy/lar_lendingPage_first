@@ -10,7 +10,7 @@
         <div class="form-group">
             <label for="alias" class="col-xs-2 control-label">Псевдоним</label>
             <div class="col-xs-8">
-                <input type="text" class="form-control" name="alias" value="{{old('name')}}" placeholder="Введите псевдоним страницы">
+                <input type="text" class="form-control" name="alias" value="{{old('alias')}}" placeholder="Введите псевдоним страницы">
             </div>
         </div>
         <div class="form-group">

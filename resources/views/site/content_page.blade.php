@@ -8,7 +8,7 @@
                     <div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
                         <div class=" delay-01s animated fadeInDown wow animated">
                             <h3>{{$page->title}}</h3><br/>
-                            <p>{{$page->text}}</p>
+                            {!! $page->text !!}
                         </div>
                     </div>
                 </div>

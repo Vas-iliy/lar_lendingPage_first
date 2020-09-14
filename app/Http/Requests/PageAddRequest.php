@@ -25,7 +25,15 @@ class PageAddRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|max:255',
+            'alias' => 'required|unique:pages|max:255',
+            'text' => 'required'
+        ];
+    }
+    public function messages () {
+        return [
+            'required' => 'Поле ":attribute" обязательно к заполнению',
+            'unique' => 'Поле ":attribute" должно быть уникальным'
         ];
     }
 }
