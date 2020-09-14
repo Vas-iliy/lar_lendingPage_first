@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$title}}</title>
     <link rel="icon" href="fa">
+    <link rel="icon" href="{{asset('assets/favicon.png')}}" type="image/png">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
