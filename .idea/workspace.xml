@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be91d4cf-21f3-4859-b5d6-da262dc018e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lar_lendingPage_first.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lar_lendingPage_first.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/content_pages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="lar_lendingpage_first: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lar_lendingpage_first: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="pages: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -238,7 +245,7 @@
       <workItem from="1599644727125" duration="212000" />
       <workItem from="1599644973960" duration="3421000" />
       <workItem from="1599941764372" duration="916000" />
-      <workItem from="1600108774150" duration="846000" />
+      <workItem from="1600108774150" duration="2149000" />
     </task>
     <servers />
   </component>
@@ -275,10 +282,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599651705249" />
-    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600109622586">
+    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600109804316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600109622586" />
+    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600109804316" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1599941807896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -291,5 +298,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599645220181" />
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600110889499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600110889499" />
   </component>
 </project>
