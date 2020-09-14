@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PageAddRequest;
 use Illuminate\Http\Request;
 
 class PagesAddController extends Controller
@@ -15,7 +16,10 @@ class PagesAddController extends Controller
             abort(404);
         }
     }
-    public function input () {
-
+    public function input (PageAddRequest $request) {
+        if ($request->isMethod('post')) {
+            $input = $request->except('_token');
+            dump($input);
+        }
     }
 }
