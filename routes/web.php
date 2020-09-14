@@ -28,7 +28,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     Route::group(['prefix'=> 'pages'], function () {
         Route::get('/', 'PagesController@execute')->name('pages');
-        Route::match(['get', 'post'], '/add', 'PagesAddController@execute')->name('pagesAdd');
+        Route::get( '/', 'PagesAddController@execute')->name('pagesAdd');
+        Route::post('/', 'PagesAddControlle@input');
         Route::match(['get', 'post', 'delete'], '/edit/{page}', 'PagesEditController@execute')->name('pagesEdit');
     });
 
