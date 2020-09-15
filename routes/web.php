@@ -31,7 +31,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::get( '/add', 'PagesAddController@execute')->name('pagesAdd');
         Route::post('/add', 'PagesAddController@input');
         Route::get( '/edit/{page}', 'PagesEditController@execute')->name('pagesEdit');
-        Route::match(['post', 'delete'], '/edit/{page}', 'PagesEditController@input');
+        Route::delete('/edit/{page}', 'PagesEditController@delete');
+        Route::post('/edit/{page}', 'PagesEditController@input');
     });
 
     Route::group(['prefix'=> 'portfolios'], function () {

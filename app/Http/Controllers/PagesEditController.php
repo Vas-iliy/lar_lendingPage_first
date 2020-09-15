@@ -38,4 +38,12 @@ class PagesEditController extends Controller
             }
         }
     }
+
+    public function delete(Page $page, Request $request) {
+        if ($request->isMethod('delete')) {
+            $page->delete();
+            return redirect('admin')->with('status', 'Страница удалена');
+        }
+    }
 }
+

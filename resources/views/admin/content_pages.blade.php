@@ -21,6 +21,7 @@
                 <td>{{$page->created_at}}</td>
                 <td>
                     <form action="{{route('pagesEdit', ['page'=>$page->id])}}" class="form-horizontal" method="post">
+                        @csrf
                         @method('delete')
                         <button class="btn btn-danger" type="submit">Удалить</button>
                     </form>
