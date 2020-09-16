@@ -4,13 +4,13 @@
         <div class="form-group">
             <label class="control-label">Название</label>
             <div>
-                <input type="text" name="name" class="form-control" placeholder="Название" required>
+                <input type="text" name="name" class="form-control" placeholder="Название" required value="{{old('name')}}">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label">Категория</label>
             <div>
-                <input type="text" name="filter" class="form-control" placeholder="Категория" required>
+                <input type="text" name="filter" class="form-control" placeholder="Категория" required value="{{old('filter')}}">
             </div>
         </div>
         <div class="form-group">
