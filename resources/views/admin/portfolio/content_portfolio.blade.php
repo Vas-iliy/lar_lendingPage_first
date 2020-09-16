@@ -32,3 +32,5 @@
         </table>
     @endif
 </div>
+
+<a href="{{route('portfolios.create')}}">Добавить изображение</a>

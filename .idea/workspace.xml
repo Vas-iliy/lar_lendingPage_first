@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be91d4cf-21f3-4859-b5d6-da262dc018e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/portfolio/content_portfolio_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/portfolio/portfolio_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PortfolioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/portfolio/content_portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/portfolio/content_portfolio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowHierarchy.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../larGloAcademy-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel.admin.panel-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -245,7 +245,7 @@
       <workItem from="1600108774150" duration="11176000" />
       <workItem from="1600204383540" duration="7720000" />
       <workItem from="1600212421124" duration="2075000" />
-      <workItem from="1600271986822" duration="4678000" />
+      <workItem from="1600271986822" duration="7620000" />
     </task>
     <servers />
   </component>
@@ -278,14 +278,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="571" y="310" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1599941795901" />
-    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1600276964312">
+    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1600283876692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600276964312" />
-    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600280557497">
+    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600283876692" />
+    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600282231341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600280557497" />
+    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600282231341" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1599941807896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -294,6 +294,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="629" y="309" key="WebDeployment.AddServerDialog.v.1/0.0.1536.824@0.0.1536.824" timestamp="1599644869588" />
+    <state x="478" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1600283768838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1600283768838" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600212419702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
