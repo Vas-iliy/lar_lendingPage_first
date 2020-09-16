@@ -11,7 +11,7 @@
                     <h5>Страницы</h5>
                 </a>
             </li>
-            <li><a href="{{route('portfolio')}}">
+            <li><a href="{{route('portfolio.index')}}">
                     <h5>Портфолио</h5>
                 </a>
             </li>

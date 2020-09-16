@@ -11,8 +11,8 @@ class PagesEditController extends Controller
 {
     public function execute(Page $page) {
         $title = 'Редактирование - ' . $page->name;
-        if (view()->exists('admin.pages_edit')) {
-            return view('admin.pages_edit', compact(['title', 'page']));
+        if (view()->exists('admin.pages.pages_edit')) {
+            return view('admin.pages.pages_edit', compact(['title', 'page']));
         }
     }
 

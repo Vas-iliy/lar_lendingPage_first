@@ -35,11 +35,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::post('/edit/{page}', 'PagesEditController@input');
     });
 
-    Route::group(['prefix'=> 'portfolios'], function () {
+    Route::resource('portfolio', 'PortfolioController')->except('show');
+    /*Route::group(['prefix'=> 'portfolios'], function () {
         Route::get('/', 'PortfolioController@execute')->name('portfolio');
         Route::match(['get', 'post'], '/add', 'PortfolioAddController@execute')->name('portfolioAdd');
         Route::match(['get', 'post', 'delete'], '/edit/{portfolio}', 'PortfolioEditController@execute')->name('portfolioEdit');
-    });
+    });*/
 
     Route::group(['prefix'=> 'services'], function () {
         Route::get('/', 'ServiceController@execute')->name('services');

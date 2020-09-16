@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function execute () {
-        if (view()->exists('admin.pages')) {
+        if (view()->exists('admin.pages.pages')) {
             $pages = Page::all();
             $title = 'Страницы';
-            return view('admin.pages', compact(['title', 'pages']));
+            return view('admin.pages.pages', compact(['title', 'pages']));
         }
         else {
             abort(404);

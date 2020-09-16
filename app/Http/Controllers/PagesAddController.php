@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 class PagesAddController extends Controller
 {
     public function execute () {
-        if (view()->exists('admin.pages_add')) {
+        if (view()->exists('admin.pages.pages_add')) {
             $title = 'Новая страница';
-            return view('admin.pages_add', compact('title'));
+            return view('admin.pages.pages_add', compact('title'));
         }
         else {
             abort(404);

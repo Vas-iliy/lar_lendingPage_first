@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="be91d4cf-21f3-4859-b5d6-da262dc018e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesAddController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesAddController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesEditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesEditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/content_pages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/content_pages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_pages_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/content_pages_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/content_pages_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/content_pages_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/pages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/pages_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/pages_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,13 +221,14 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets\js" />
       <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
       <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\resources\views\admin\pages" />
+      <recent name="D:\server\OpenServer\domains\lar_lendingPage_first\public\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -248,7 +257,9 @@
       <workItem from="1599644973960" duration="3421000" />
       <workItem from="1599941764372" duration="916000" />
       <workItem from="1600108774150" duration="11176000" />
-      <workItem from="1600204383540" duration="7099000" />
+      <workItem from="1600204383540" duration="7720000" />
+      <workItem from="1600212421124" duration="2075000" />
+      <workItem from="1600271986822" duration="3134000" />
     </task>
     <servers />
   </component>
@@ -281,14 +292,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="571" y="310" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1599941795901" />
-    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1600206432578">
+    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1600276964312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600206432578" />
-    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600205370230">
+    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600276964312" />
+    <state x="977" y="343" key="NewPhpFileDialog" timestamp="1600280557497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600205370230" />
+    <state x="977" y="343" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600280557497" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1599941807896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,10 +308,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="629" y="309" key="WebDeployment.AddServerDialog.v.1/0.0.1536.824@0.0.1536.824" timestamp="1599644869588" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1599645220181">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600212419702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599645220181" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600212419702" />
     <state x="815" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600110889499">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
