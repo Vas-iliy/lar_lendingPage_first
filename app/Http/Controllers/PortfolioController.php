@@ -73,34 +73,64 @@ class PortfolioController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Portfolio $portfolio
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function edit($id)
+    public function edit(Portfolio $portfolio)
     {
-        //
+        $title = 'Редактирование - ' . $portfolio->name;
+        if (view()->exists('admin.portfolio.portfolio_edit')) {
+            return view('admin.portfolio.portfolio_edit', compact(['title', 'portfolio']));
+        }
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param PortfolioRequest $request
+     * @param Portfolio $portfolio
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, $id)
+    public function update(PortfolioRequest $request, Portfolio $portfolio)
     {
-        //
+        if ($request->isMethod('patch')) {
+            $input = $request->except('_token');
+            $input['filter'] = trim($input['filter']);
+
+            if ($request->hasFile('images')) {
+                $file = $request->file('images');
+                $input['images'] = $file->getClientOriginalName();
+                $file->move(public_path() . '/assets/img', $input['images']);
+            }
+            else {
+                $input['images'] = $input['old_images'];
+            }
+            unset($input['old_images']);
+            
+            $portfolio->fill($input);
+
+            if ($portfolio->update()) {
+                return redirect('admin')->with('status', 'Изображение обновлено');
+            }
+        }
+        else {
+            abort(404);
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Portfolio $portfolio
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Request $request, Portfolio $portfolio)
     {
-        //
+        if ($request->isMethod('delete')) {
+            $portfolio->delete();
+            return redirect('admin')->with('status', 'Изображение удалено');
+        }
     }
 }
