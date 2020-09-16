@@ -35,7 +35,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::post('/edit/{page}', 'PagesEditController@input');
     });
 
-    Route::resource('portfolio', 'PortfolioController')->except('show');
+    Route::resource('portfolios', 'PortfolioController')->except('show');
     /*Route::group(['prefix'=> 'portfolios'], function () {
         Route::get('/', 'PortfolioController@execute')->name('portfolio');
         Route::match(['get', 'post'], '/add', 'PortfolioAddController@execute')->name('portfolioAdd');

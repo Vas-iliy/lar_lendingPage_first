@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Portfolio;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -9,11 +10,18 @@ class PortfolioController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
-
+        if (view()->exists('admin.portfolio.portfolio')) {
+            $title = 'Портфолио';
+            $portfolio = Portfolio::all();
+            return view('admin.portfolio.portfolio', compact(['title', 'portfolio']));
+        }
+        else {
+            abort(404);
+        }
     }
 
     /**
