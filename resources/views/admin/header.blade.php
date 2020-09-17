@@ -15,7 +15,7 @@
                     <h5>Портфолио</h5>
                 </a>
             </li>
-            <li><a href="{{route('services')}}">
+            <li><a href="{{route('services.index')}}">
                     <h5>Сервисы</h5>
                 </a>
             </li>
