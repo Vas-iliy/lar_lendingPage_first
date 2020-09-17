@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Servic;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -9,11 +10,18 @@ class ServiceController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
-        //
+        if (view()->exists('admin.services.services')) {
+            $title = 'Сервисы';
+            $services = Servic::all();
+            return view('admin.services.services', compact(['title', 'services']));
+        }
+        else {
+            abort(404);
+        }
     }
 
     /**
