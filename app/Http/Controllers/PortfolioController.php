@@ -78,6 +78,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
+        dd($portfolio);
         $title = 'Редактирование - ' . $portfolio->name;
         if (view()->exists('admin.portfolio.portfolio_edit')) {
             return view('admin.portfolio.portfolio_edit', compact(['title', 'portfolio']));
@@ -106,7 +107,7 @@ class PortfolioController extends Controller
                 $input['images'] = $input['old_images'];
             }
             unset($input['old_images']);
-            
+
             $portfolio->fill($input);
 
             if ($portfolio->update()) {
