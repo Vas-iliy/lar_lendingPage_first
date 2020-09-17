@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ServiceRequest;
 use App\Servic;
 use Illuminate\Http\Request;
 
@@ -27,22 +28,38 @@ class ServiceController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        if (view()->exists('admin.services.services_add')) {
+            $title = 'Новый сервис';
+            return view('admin.services.services_add', compact('title'));
+        }
+        else {
+            abort(404);
+        }
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store(Request $request)
+    public function store(ServiceRequest $request)
     {
-        //
+        if ($request->isMethod('post')){
+            $input = $request->except('_token');
+            $services = new Servic();
+            $services->fill($input);
+            if ($services->save()) {
+                return redirect('admin')->with('status', 'Сервис добавлен');
+            }
+        }
+        else {
+            abort(404);
+        }
     }
 
     /**

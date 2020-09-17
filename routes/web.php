@@ -38,12 +38,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::resource('portfolios', 'PortfolioController')->except('show');
 
     Route::resource('services', 'ServiceController')->except('show');
-
-   /* Route::group(['prefix'=> 'services'], function () {
-        Route::get('/', 'ServiceController@execute')->name('services');
-        Route::match(['get', 'post'], '/add', 'ServiceAddController@execute')->name('serviceAdd');
-        Route::match(['get', 'post', 'delete'], '/edit/{service}', 'ServiceEditController@execute')->name('serviceEdit');
-    });*/
 });
 
 Auth::routes();
